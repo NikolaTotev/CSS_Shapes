@@ -1,0 +1,109 @@
+<!-- TODO Rename referat.html to index as is the convention after final version -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styling.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Montserrat+Alternates:wght@400;500;800;900&display=swap" rel="stylesheet">
+  <title>CSS Shapes</title>
+</head>
+
+<body>
+  <main id="mainBox">
+    <header>
+      <section>
+        <h1 class="pageTitle">
+          CSS Shapes
+        </h1>
+      </section>
+    </header>
+
+    <section>
+      <header>
+        <h2>Какво представляват и за какво се използват (въведение) </h2>
+      </header>
+      <article>
+        <p>CSS Shapes се използват за обвиване на съдържание около дефинирани от програмиста линия.
+          Линиите се дефинират с функции като circle(), ellipse(), inset() или polygon() и се позиционират във виртуална кутия, която се нарича Reference Box.
+          За тази кутия ще има подробно описание след малко.</p>
+
+        <p> CSS Shapes е стандардт, който позволява за създаването на форми, които както беше споменато преди
+          позволява съдържанието на уеб страници (най-често текст) да следват външните контури.
+          Подобна техника се използва при създаването на писания, където има много текст.</p>
+
+        <p>Преди да се въведат CSS Shapes, беше почти невъзможно да се създаде подобно оформление. Повечето дизайни са били съставени прави линии, редове колони.p>
+      </article>
+
+      <header>
+        <h3>Малко повече за Reference Box</h3>
+      </header>
+      <article>
+        <p>Reference box дефинира координатната система на формите.
+          Така тази кутия въздейства върху това как дадена форма ще бъде нарисувана и позиционирана.
+          Има 4 различни вида: margin-box, padding-box, border-box и content-box. Всяка от тях възпроизвежда леко различни резултати. По подразбиране се използва
+          margin-box. На снимките долу е показано как изглеждат тези кутии. </p>
+      </article>
+
+      <header>
+        <h3> Как тези кутии влияят върху формите </h3>
+      </header>
+      <article>
+        <p>След като имаме добра представа за това какво е Reference Box,
+          може да се види как тя влияе върху формите, които ползваме. В следващите примери може да видим какви резултати
+          различните кутии дават в сравнение с обикновената форма
+          (обикновена в този случай се подразбира като кутия, която използва margin-box но без допълнителен margin)</p>
+      </article>
+    </section>
+
+    <section>
+      <header>
+        <h2> Как се използват (секция тип документация) </h2>
+      </header>
+      <article>
+        <header>
+          <h3> Кратка документация</h3>
+        </header>
+        <article>
+          <p>Basic shapes:
+            Describe them, something like documentation, examples will be in next page
+            We can define all sorts of Basic Shapes in CSS by applying the following function values to the shape-outside property:
+            circle()
+            ellipse()
+            inset()
+            polygon()</p>
+        </article>
+
+        <header>
+          <h3>Примери с код</h3>
+        </header>
+        <article>
+          <p>Прости форми
+            Текст около форми
+            Текст с градиент
+            Снимки с различни форми + текст около тях
+            Полигони</p>
+        </article>
+
+        <header>
+          <h3>Интерактивно демо</h3>
+        </header>
+        <article>
+          <p>Basic shapes, a gradient demo, adding shapes next to text,
+            Try to add some kind of sliders that shows how things change.
+            Възможност за преместване/смяна на стойности за да се види разликата във формите.</p>
+        </article>
+
+        <header>
+          <h3>Къде може да се използват </h3>
+        </header>
+        <article>
+          <p>Таблица с информация за различните browsers</p>
+        </article>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
