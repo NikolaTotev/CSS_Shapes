@@ -1,0 +1,182 @@
+<!-- TODO Rename referat.html to index as is the convention after final version -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/styling.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Montserrat+Alternates:wght@400;500;800;900&display=swap" rel="stylesheet">
+  <title>CSS Shapes</title>
+</head>
+
+<body>
+  <main id="mainBox">
+    <header>
+      <section>
+        <h1 class="pageTitle">
+          CSS Shapes
+        </h1>
+        <h3 class="authorInfo">
+          by Nikola Totev
+        </h3>
+      </section>
+    </header>
+
+    <section>
+      <header>
+        <h2>Какво представляват и за какво се използват (въведение) </h2>
+      </header>
+      <article>
+        <p>CSS Shapes се използват за обвиване на съдържание около дефинирани от програмиста линия.
+          Линиите се дефинират с функции като circle(), ellipse(), inset() или polygon() и се позиционират във виртуална кутия, която се нарича Reference Box.
+          За тази кутия ще има подробно описание след малко.</p>
+
+        <p> CSS Shapes е стандардт, който позволява за създаването на форми, които както беше споменато преди
+          позволява съдържанието на уеб страници (най-често текст) да следват външните контури.
+          Подобна техника се използва при създаването на писания, където има много текст.</p>
+
+        <p>Преди да се въведат CSS Shapes, беше почти невъзможно да се създаде подобно оформление. Повечето дизайни са били съставени прави линии, редове колони.p>
+      </article>
+
+      <header>
+        <h3>Малко повече за Reference Box</h3>
+      </header>
+      <article>
+        <p>Reference box дефинира координатната система на формите.
+          Така тази кутия въздейства върху това как дадена форма ще бъде нарисувана и позиционирана.
+          Има 4 различни вида: margin-box, padding-box, border-box и content-box. Всяка от тях възпроизвежда леко различни резултати. По подразбиране се използва
+          margin-box. На фиг(/placeholder number/) долу е показано как изглеждат тези кутии. </p>
+        <figure>
+          <img src="img/refBox.png" alt="Reference box" width="900">
+          <figcaption id="fig1">Фигура /placeholder number/. Демонстрация на Reference Box</figcaption>
+        </figure>
+      </article>
+
+      <header>
+        <h3> Как тези кутии влияят върху формите </h3>
+      </header>
+      <article>
+        <p>След като имаме добра представа за това какво е Reference Box,
+          може да се види как тя влияе върху формите, които ползваме. В следващите примери може да видим какви резултати
+          различните кутии дават в сравнение с обикновената форма
+          (обикновена в този случай се подразбира като кутия, която използва margin-box но без допълнителен margin)</p>
+        <p>
+          За примерите с формите, ще се използва същата кутия от обяснението на Reference Box. Тук "Demo Box" има размери 300х300 px.
+          Този размер се отнася към "content box". Това означава, че при "margin: 0 auto" размерът на кръга е 300х300 px
+        </p>
+        <p>
+          Детайлите са как се създава формата, ще бъдат покрити в следващите секции.
+        </p>
+
+        <figure>
+          <img src="img/shapeMarginOnly.png" alt="Reference box" width="500">
+          <figcaption id="fig1">Фигура /placeholder number/. Кръг, само с "margin: 0 auto"</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/shapePadding20.png" alt="Reference box" width="500">
+          <figcaption id="fig1">Фигура /placeholder number/. Кръг, с "margin: 0 auto, padding 20px"</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/shapeBorder20.png" alt="Reference box" width="500">
+          <figcaption id="fig1">Фигура /placeholder number/. Кръг, с "margin: 0 auto, border 20px"</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/shapePadding20Border20.png" alt="Reference box" width="500">
+          <figcaption id="fig1">Фигура /placeholder number/. Кръг, с "margin: 0 auto, border 20px"</figcaption>
+        </figure>
+        <p>
+          Следващата фигура, показва какво се получава ако цветът на border е различна от background-color.
+        </p>
+        <figure>
+          <img src="img/shapeEffectOfBorder.png" alt="Reference box" width="500">
+          <figcaption id="fig1">Фигура /placeholder number/. Кръг, с "margin: 0 auto, border 20px"</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section>
+      <header>
+        <h2> Как се използват (секция тип документация) </h2>
+      </header>
+      <article>
+        <header>
+          <h3> Кратка документация</h3>
+        </header>
+        <article>
+          <p>
+            &lt TODO &gt: Документация за основните форми, какви параметри приемат. Например функциите:</br>
+              circle()</br>
+              ellipse()</br>
+              inset()</br>
+              polygon()</br>
+            &lt TODO &gt: Документация за това как се създават форми, като тези показани в предходните примерите.</br>
+
+
+
+          </p>
+        </article>
+
+        <header>
+          <h3>Примери с код</h3>
+        </header>
+        <article>
+          <p>
+            &lt TODO &gt: Текст около форми (без снимка) </br>
+            &lt TODO &gt: Текст, под ъгъл и с градиент под същия ъгъл.</br>
+            &lt TODO &gt: Добавяне на пример със снимка, и форма, която да кара тексът да минава по контурите на снимката.</br>
+            &lt TODO &gt: Добавяне на пример с полигони.</br>
+          </p>
+        </article>
+
+        <header>
+          <h3>Интерактивно демо</h3>
+        </header>
+        <article>
+          <p>
+            &lt TODO &gt: Ще има някакви sliders, които да позволяват за промяна на формата
+            на някаква формичка.</br>
+
+            &lt TODO &gt: Мисля да добавя нещо което да показва градиент, който отново някак да може
+            да се променя.</br>
+
+            &lt TODO &gt: Ще има формичка с текст, който се увива около нея. Отново мисля да може да се
+            променя.</br>
+
+            &lt TODO &gt: Интерактивна версия на демото за reference Box</br>
+          </p>
+        </article>
+
+        <header>
+          <h3>Къде може да се използват </h3>
+        </header>
+        <article>
+          <p>Таблица с информация за различните browsers</p>
+          <figure>
+            <img src="img/browserSupport.png" alt="Reference box" width="900">
+          </figure>
+          <figure>
+            <img src="img/legend.png" alt="Reference box" width="600">
+            <figcaption id="fig1">Фигура /placeholder number/. Информация за поддръжка.</figcaption>
+          </figure>
+        </article>
+
+        <header>
+          <h3>Други интересни неща (tips & tricks)</h3>
+        </header>
+        <article>
+          <p>
+            &lt TODO &gt: Да се намерят някакви по-интересни и нетипични приложения.</br>
+            &lt TODO &gt: Да се покаже как може да се правят полигони с онлайн инструмент Clippy. </br>
+            &lt TODO &gt: Да се намерят tips & tricks свързани с темата.</br>
+          </p>
+        </article>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
