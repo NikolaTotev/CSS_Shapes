@@ -1,2 +1,2 @@
 # CSS_Shapes
-This is a project for my web course that aim to showcase CSS shapes.
+This is a project for my web course that aims to showcase CSS shapes.
