@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="styling.css">
+  <link rel="stylesheet" href="css/styling.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Montserrat+Alternates:wght@400;500;800;900&display=swap" rel="stylesheet">
   <title>CSS Shapes</title>
@@ -17,6 +17,9 @@
         <h1 class="pageTitle">
           CSS Shapes
         </h1>
+        <h3 class="authorInfo">
+          by Nikola Totev
+        </h3>
       </section>
     </header>
 
@@ -43,7 +46,11 @@
         <p>Reference box дефинира координатната система на формите.
           Така тази кутия въздейства върху това как дадена форма ще бъде нарисувана и позиционирана.
           Има 4 различни вида: margin-box, padding-box, border-box и content-box. Всяка от тях възпроизвежда леко различни резултати. По подразбиране се използва
-          margin-box. На снимките долу е показано как изглеждат тези кутии. </p>
+          margin-box. На фиг(/placeholder number/) долу е показано как изглеждат тези кутии. </p>
+        <figure>
+          <img src="img/refBox.png" alt="Reference box" width="900">
+          <figcaption id="fig1">Фигура /placeholder number/. Демонстрация на Reference Box</figcaption>
+        </figure>
       </article>
 
       <header>
@@ -54,6 +61,40 @@
           може да се види как тя влияе върху формите, които ползваме. В следващите примери може да видим какви резултати
           различните кутии дават в сравнение с обикновената форма
           (обикновена в този случай се подразбира като кутия, която използва margin-box но без допълнителен margin)</p>
+          <p>
+            За примерите с формите, ще се използва същата кутия от обяснението на Reference Box. Тук "Demo Box" има размери 300х300 px.
+            Този размер се отнася към "content box". Това означава, че при "margin: 0 auto" размерът на кръга е 300х300 px
+          </p>
+          <p>
+            Детайлите са как се създава формата, ще бъдат покрити в следващите секции.
+          </p>
+
+          <figure>
+            <img src="img/shapeMarginOnly.png" alt="Reference box" width="500">
+            <figcaption id="fig1">Фигура /placeholder number/. Кръг, само с "margin: 0 auto"</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/shapePadding20.png" alt="Reference box" width="500">
+            <figcaption id="fig1">Фигура /placeholder number/. Кръг, с "margin: 0 auto, padding 20px"</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/shapeBorder20.png" alt="Reference box" width="500">
+            <figcaption id="fig1">Фигура /placeholder number/. Кръг, с "margin: 0 auto, border 20px"</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/shapePadding20Border20.png" alt="Reference box" width="500">
+            <figcaption id="fig1">Фигура /placeholder number/. Кръг, с "margin: 0 auto, border 20px"</figcaption>
+          </figure>
+          <p>
+            Следващата фигура, показва какво се получава ако цветът на border е различна от background-color.
+          </p>
+          <figure>
+            <img src="img/shapeEffectOfBorder.png" alt="Reference box" width="500">
+            <figcaption id="fig1">Фигура /placeholder number/. Кръг, с "margin: 0 auto, border 20px"</figcaption>
+          </figure>
       </article>
     </section>
 
@@ -90,7 +131,19 @@
           <h3>Интерактивно демо</h3>
         </header>
         <article>
-          <p>Basic shapes, a gradient demo, adding shapes next to text,
+          <p>
+            &lg TODO &gt: Ще има някакви sliders, които да позволяват за промяна на формата
+            на някаква формичка.
+
+            &lg TODO &gt: Мисля да добавя нещо което да показва градиент, който отново някак да може
+            да се променя.
+
+            &lg TODO &gt: Ще има формичка с текст, който се увива около нея. Отново мисля да може да се
+            променя.
+
+            &lg TODO &gt: Интерактивна версия на демото за reference Box
+
+            Basic shapes, a gradient demo, adding shapes next to text,
             Try to add some kind of sliders that shows how things change.
             Възможност за преместване/смяна на стойности за да се види разликата във формите.</p>
         </article>
@@ -100,6 +153,13 @@
         </header>
         <article>
           <p>Таблица с информация за различните browsers</p>
+          <figure>
+            <img src="img/browserSupport.png" alt="Reference box" width="900">
+          </figure>
+          <figure>
+            <img src="img/legend.png" alt="Reference box" width="600">
+            <figcaption id="fig1">Фигура /placeholder number/. Информация за поддръжка.</figcaption>
+          </figure>
         </article>
       </article>
     </section>
