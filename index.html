@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/styling.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Montserrat+Alternates:wght@400;500;800;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <title>CSS Shapes</title>
 </head>
 
@@ -17,15 +18,16 @@
         <h1 class="pageTitle">
           CSS Shapes
         </h1>
+        <!--
         <h3 class="authorInfo">
           by Nikola Totev
-        </h3>
+        </h3> -->
       </section>
     </header>
 
     <section>
       <header>
-        <h2>Какво представляват и за какво се използват (въведение) </h2>
+        <h2>Какво представляват и за какво се използват</h2>
       </header>
       <article>
         <p>CSS Shapes се използват за обвиване на съдържание около дефинирани от програмиста линия.
@@ -47,6 +49,8 @@
           Така тази кутия въздейства върху това как дадена форма ще бъде нарисувана и позиционирана.
           Има 4 различни вида: margin-box, padding-box, border-box и content-box. Всяка от тях възпроизвежда леко различни резултати. По подразбиране се използва
           margin-box. На фиг(/placeholder number/) долу е показано как изглеждат тези кутии. </p>
+
+        <p class="warningMsg">ВАЖНО: Цифрите към фигурите ще бъдат актуализирани при финалната версия!</p>
         <figure>
           <img src="img/refBox.png" alt="Reference box" width="900">
           <figcaption id="fig1">Фигура /placeholder number/. Демонстрация на Reference Box</figcaption>
@@ -54,7 +58,7 @@
       </article>
 
       <header>
-        <h3> Как тези кутии влияят върху формите </h3>
+        <h3> Как reference box влияe върху формите </h3>
       </header>
       <article>
         <p>След като имаме добра представа за това какво е Reference Box,
@@ -68,6 +72,7 @@
         <p>
           Детайлите са как се създава формата, ще бъдат покрити в следващите секции.
         </p>
+
 
         <figure>
           <img src="img/shapeMarginOnly.png" alt="Reference box" width="500">
@@ -100,7 +105,7 @@
 
     <section>
       <header>
-        <h2> Как се използват (секция тип документация) </h2>
+        <h2> Как се използват </h2>
       </header>
       <article>
         <header>
@@ -109,10 +114,10 @@
         <article>
           <p>
             &lt TODO &gt: Документация за основните форми, какви параметри приемат. Например функциите:</br>
-              circle()</br>
-              ellipse()</br>
-              inset()</br>
-              polygon()</br>
+            circle()</br>
+            ellipse()</br>
+            inset()</br>
+            polygon()</br>
             &lt TODO &gt: Документация за това как се създават форми, като тези показани в предходните примерите.</br>
 
 
@@ -157,9 +162,6 @@
           <p>Таблица с информация за различните browsers</p>
           <figure>
             <img src="img/browserSupport.png" alt="Reference box" width="900">
-          </figure>
-          <figure>
-            <img src="img/legend.png" alt="Reference box" width="600">
             <figcaption id="fig1">Фигура /placeholder number/. Информация за поддръжка.</figcaption>
           </figure>
         </article>
@@ -173,6 +175,44 @@
             &lt TODO &gt: Да се покаже как може да се правят полигони с онлайн инструмент Clippy. </br>
             &lt TODO &gt: Да се намерят tips & tricks свързани с темата.</br>
           </p>
+        </article>
+
+        <header>
+          <h3>Източници</h3>
+        </header>
+        <article>
+          <cite class="reference">[1]
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside" target="_blank" rel="external noreferrer nofollow">
+              shape-outside</a> | MDN, Информация за shape-outside както и за поддръжка от браузъри </cite> </br>
+
+          <cite class="reference">[2]
+            <a href="https://css-tricks.com/people-talkin-shapes/" target="_blank" rel="external noreferrer nofollow">
+              CSS Tricks "people talking shapes" article </a> | css-tricks.com, обща информация за CSS shapes </cite></br>
+
+          <cite class="reference">[3]
+            <a href="http://razvancaliman.com/writing/css-shapes-reference-boxes/" target="_blank" rel="external noreferrer nofollow">
+              Reference box information </a> | razvancaliman.com, подробно описание на Reference Box </cite></br>
+
+          <cite class="reference">[4]
+            <a href="https://www.youtube.com/watch?v=XyOS_9keq0k " target="_blank" rel="external noreferrer nofollow">
+              CSS Box model </a> | youtube.com (5-Minute Web Dev), демонстрация на CSS Box модела </cite></br>
+
+          <cite class="reference">[5]
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Shapes/Basic_Shapes " target="_blank" rel="external noreferrer nofollow">
+              CSS Shapes documentation </a> | MDN, Документация и примери за CSS Shapes</cite></br>
+
+          <cite class="reference">[6]
+            <a href="https://docs.w3cub.com/browser_support_tables/css-shapes" target="_blank" rel="external noreferrer nofollow">
+              CSS Shapes documentation </a> | docs.w3cub.com, информация за поддръжка от браузъри </cite></br>
+
+          <cite class="reference">[7]
+            <a href="https://webdesign.tutsplus.com/tutorials/how-to-use-css-shapes-in-your-web-design--cms-27498" target="_blank" rel="external noreferrer nofollow">
+
+              How to use CSS Shapes </a> | webdesign.tutsplus.com, информация за това как да се използват CSS Shapes </cite></br>
+          <cite class="reference">[8]
+            <a href="https://tympanus.net/codrops/2018/11/29/an-introduction-to-css-shapes/" target="_blank" rel="external noreferrer nofollow">
+              CSS Shapes introduction </a> | tympanus.net, въведени в CSS Shapes </cite></br>
+
         </article>
       </article>
     </section>

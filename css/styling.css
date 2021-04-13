@@ -17,9 +17,16 @@ h3 {
   color: #424242;
 }
 
+.warningMsg
+{
+  color: #DF7066;
+  font-weight: bold;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #424242;
 }
 
@@ -31,8 +38,7 @@ p {
   margin-bottom: 0;
 }
 
-h3.authorInfo
-{
+h3.authorInfo {
   font-family: 'Montserrat', sans-serif;
   color: #424242;
   font-size: 30px;
@@ -40,14 +46,24 @@ h3.authorInfo
   margin-top: 0;
 }
 
-figure
-{
+figure {
   justify-content: center;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
 }
 
-figcaption
-{
+figcaption {
   font-style: italic;
+}
+
+cite {
+  font-style: normal;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #FB8500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
