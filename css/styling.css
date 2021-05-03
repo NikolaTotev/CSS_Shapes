@@ -17,6 +17,20 @@ h3 {
   color: #424242;
 }
 
+h4 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 25px;
+  color: #424242;
+}
+
+.supportedShape {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #424242;
+}
+
+
 .warningMsg
 {
   color: #DF7066;

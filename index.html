@@ -29,7 +29,7 @@
         Моля, преди да коментирате, уверете се, че знаете за какво говорите.
       </p>
       <a href="https://github.com/NikolaTotev/CSS_Shapes" target="_blank" rel="external noreferrer nofollow">
-      CSS Shapes Github </a>
+        CSS Shapes Github </a>
 
       <p>Снимките са подравнени, както трябва да бъде. И съм написал с червено, ще ги номерирам, когато съм ги сложил всичките снимки.
       </p>
@@ -126,12 +126,84 @@
         </header>
         <article>
           <p>
-            &lt TODO &gt: Документация за основните форми, какви параметри приемат. Например функциите:</br>
-            circle()</br>
-            ellipse()</br>
-            inset()</br>
-            polygon()</br>
-            &lt TODO &gt: Документация за това как се създават форми, като тези показани в предходните примерите.</br>
+            Тази секция разглежда различните форми които се поддържат, как да се използат както и няколко примера.
+          </p>
+          <h4>Поддържани форми</h4>
+          <p class="supportedShape">inset() = inset( &ltshape-arg>{1,4} [round &ltborder-radius&gt]? )</p>
+          <p>Дефинира вграден правоъгълнк</p>
+          <!--
+            When all of the first four arguments
+            are supplied they represent the top, right,
+            bottom and left offsets from the reference box
+            inward that define the positions of the edges of the inset rectangle.
+            These arguments follow the syntax of the margin shorthand,
+            that let you set all four insets with one, two or four values. -->
+
+            <p>
+              Когато първите четири аргумента се използват, top, right, bottom и left офсети от
+              reference box навътре дефинират ъглите на вградения правоъгълник.
+              Аргументите следват синтаксиса на margin shorthand, който ти позволява да
+              дефинираш 4 instests  с една, две или четири стойности.
+            </p>
+
+              <!--The shape-radius argument represents r, the radius of the circle. Negative values are invalid.
+               A percentage value here is resolved from the used width and height of the reference box as
+                sqrt(width2+height2)/sqrt(2).
+
+              The position argument defines the center of the circle. This defaults to center if omitted.-->
+          <p class="supportedShape">circle() = circle( [&ltshape-radius&gt]? [at &ltposition&gt]? )</p>
+          <p>
+            shape-radius представлява r - радиуса на кръга. Отрицателни стойности не са валидни.
+            Процентна стойност се изчислява от широчината и височината на reference box: sqrt(width2+height2)/sqrt(2)
+          </p>
+
+          <p>
+            position аргументът дефинира центъра на кръга. По подрабиране е център ако този аргумент е пропуснат.
+          </p>
+
+          <!--
+          The shape-radius arguments represent rx and ry, the x-axis and y-axis radii of the ellipse,
+          in that order. Negative values for either radius are invalid. Percentage values here
+          are resolved against the used width (for the rx value) and the used height (for the ry value)
+          of the reference box.
+          The position argument defines the center of the ellipse. This defaults to center if omitted.
+        -->
+          <p class="supportedShape">ellipse() = ellipse( [&ltshape-radius&gt{2}]? [at &ltposition&gt]? )</p>
+          <p>
+            shape-radius аргументите представляват rx и ry, радиусите за оста х и оста у на елипсата в тази последователност.
+            Отрицателни стойности са невалидни. Процентните стойности се изчислват спрямо ширината (стойността на rx) и височината (стойността на ry).
+            на reference box.
+          </p>
+
+          <p>
+            position аргументът дефинира центъра на елипсата. По подрабиране е център ако този аргумент е пропуснат.
+          </p>
+
+          <!--
+          <'fill-rule'> - The filling rule used to determine the interior of the polygon.
+          Possible values are nonzero or evenodd.
+           Default value when omitted is nonzero.
+          Each pair argument in the list represents xi and yi - the x and y axis coordinates
+           of the i-th vertex of the polygon.
+          The UA must close a polygon by connecting the last vertex with the first vertex of the list.-->
+
+          <p class="supportedShape">polygon() = polygon( [&ltfill-rule&gt,]? [&ltshape-arg&gt &ltshape-arg&gt]# )</p>
+          <p>
+            &lt'fill-rule'&gt - Правилото за запълване се използва да се установи вътрешността на полигона.
+            Погледнете <a href="https://www.w3.org/TR/SVG/painting.html#FillRuleProperty">SVG fill-rule </a>
+            Възможни за стойности които са
+            <a href="https://www.w3.org/TR/SVG/painting.html#FillRuleProperty">nonzero </a>
+            или
+            <a href="https://www.w3.org/TR/SVG/painting.html#FillRuleProperty">evenodd </a>
+            .
+          </p>
+          <p>
+            Всеки чифт ардументи в списъка представляват <strong>x<sub>i</sub></strong> и <strong>y<sub>i</sub></strong> - х и у координати на i-тия връх на полигона.
+          </p>
+
+
+          <p>
+          &lt TODO &gt: Документация за това как се създават форми, като тези показани в предходните примерите.</br>
 
 
 
