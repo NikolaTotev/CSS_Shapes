@@ -22,22 +22,7 @@
         </h3>
       </section>
     </header>
-    <section>
-      <p class="warningMsg">За рецензентите:</p>
-      <p>Не съм сигурен защо мислите, че това е направено с bootstrap, но не е
-        може да отидете на Github линка под този параграф и да разгледате файловете.
-        Моля, преди да коментирате, уверете се, че знаете за какво говорите.
-      </p>
-      <a href="https://github.com/NikolaTotev/CSS_Shapes" target="_blank" rel="external noreferrer nofollow">
-        CSS Shapes Github </a>
 
-      <p>Снимките са подравнени, както трябва да бъде. И съм написал с червено, ще ги номерирам, когато съм ги сложил всичките снимки.
-      </p>
-      <p>
-        Съжалявам, че не съм получил конструктивна критика, ако някой друг чете това в момента, ще се радвам да чуя друго мнение, което е конструктивно.
-      </p>
-
-    </section>
     <section>
       <header>
         <h2>Какво представляват и за какво се използват</h2>
@@ -139,14 +124,14 @@
             These arguments follow the syntax of the margin shorthand,
             that let you set all four insets with one, two or four values. -->
 
-            <p>
-              Когато първите четири аргумента се използват, top, right, bottom и left офсети от
-              reference box навътре дефинират ъглите на вградения правоъгълник.
-              Аргументите следват синтаксиса на margin shorthand, който ти позволява да
-              дефинираш 4 instests  с една, две или четири стойности.
-            </p>
+          <p>
+            Когато първите четири аргумента се използват, top, right, bottom и left офсети от
+            reference box навътре дефинират ъглите на вградения правоъгълник.
+            Аргументите следват синтаксиса на margin shorthand, който ти позволява да
+            дефинираш 4 instests с една, две или четири стойности.
+          </p>
 
-              <!--The shape-radius argument represents r, the radius of the circle. Negative values are invalid.
+          <!--The shape-radius argument represents r, the radius of the circle. Negative values are invalid.
                A percentage value here is resolved from the used width and height of the reference box as
                 sqrt(width2+height2)/sqrt(2).
 
@@ -200,44 +185,182 @@
           <p>
             Всеки чифт ардументи в списъка представляват <strong>x<sub>i</sub></strong> и <strong>y<sub>i</sub></strong> - х и у координати на i-тия връх на полигона.
           </p>
-
-
-          <p>
-          &lt TODO &gt: Документация за това как се създават форми, като тези показани в предходните примерите.</br>
-
-
-
-          </p>
         </article>
 
         <header>
           <h3>Примери с код</h3>
         </header>
         <article>
+          <h4> inset() </h4>
+          <div class="box">
+            <div class="shape"></div>
+            <p>One November night in the year 1782, so the story runs, two brothers sat over their winter fire in the little French town of Annonay, watching the grey smoke-wreaths from the hearth curl up the wide chimney. Their names were Stephen
+              and Joseph Montgolfier, they were papermakers by trade, and were noted as possessing thoughtful minds and a deep interest in all scientific knowledge and new discovery. Before that night—a memorable night, as it was to prove—hundreds of
+              millions of people had watched the rising smoke-wreaths of their fires without drawing any special inspiration from the fact.</p>
+          </div>
+          <pre class="line-numbers">
+            <code class="language-markup">
+              &ltdiv class="box">
+                &ltdiv class="shape">&lt/div>
+                &ltp>Text&lt/p>
+              &lt/div>
+            </code>
+          </pre>
+
+          <pre class="line-numbers">
+            <code class="language-css">
+              .shape {
+                  float: left;
+                  width: 150px;
+                  height: 100px;
+                  shape-outside: inset(20px 50px 10px 0 round 50px);
+                  background-color: #FB8500;
+                  border-radius: 10px;
+                  margin:20px;
+                  padding: 20px;
+              }
+            </code>
+          </pre>
+          <figure>
+            <img src="img/VisibleDiv.png" alt="Reference box" width="850">
+            <figcaption id="fig1">Фигура /placeholder number/. div, който се вижда направен със CSS</figcaption>
+          </figure>
+          <figure>
+            <img src="img/inset.png" alt="Reference box" width="850">
+            <figcaption id="fig1">Фигура /placeholder number/. Формата създадена от inset(), която кара текста да има форма.</figcaption>
+          </figure>
+
+          <h4> circle() </h4>
+          <div class="box">
+            <img class="circleDemo" src="img/round-balloon.png" alt="balloon">
+            <p>One November night in the year 1782, so the story runs,
+              two brothers sat over their winter fire in the little French
+              town of Annonay, watching the grey smoke-wreaths from the hearth
+              curl up the wide chimney. Their names were Stephen
+              and Joseph Montgolfier, they were papermakers by trade, and
+              were noted as possessing thoughtful minds and a deep interest
+              in all scientific knowledge and new discovery. Before that
+              night—a memorable night, as it was to prove—hundreds of
+              millions of people had watched the rising smoke-wreaths of their f
+              ires without drawing any special inspiration from the fact.</p>
+          </div>
+
           <p>
-            &lt TODO &gt: Текст около форми (без снимка) </br>
-            &lt TODO &gt: Текст, под ъгъл и с градиент под същия ъгъл.</br>
-            &lt TODO &gt: Добавяне на пример със снимка, и форма, която да кара тексът да минава по контурите на снимката.</br>
-            &lt TODO &gt: Добавяне на пример с полигони.</br>
+
           </p>
-        </article>
+          <pre class="line-numbers">
+            <code class="language-markup">
+              &ltdiv class="box">
+              &ltimg class="circleDemo" src="img/round-balloon.png" alt="balloon">
+              &ltp>Text&lt/p>
+              &lt/div>
+            </code>
+          </pre>
 
-        <header>
-          <h3>Интерактивно демо</h3>
-        </header>
-        <article>
-          <p>
-            &lt TODO &gt: Ще има някакви sliders, които да позволяват за промяна на формата
-            на някаква формичка.</br>
+          <pre class="line-numbers">
+            <code class="language-css">
+              .circleDemo {
+                float: left;
+                shape-outside: circle(50% at 42%);
+                margin: 20px;
+              }
+            </code>
+          </pre>
 
-            &lt TODO &gt: Мисля да добавя нещо което да показва градиент, който отново някак да може
-            да се променя.</br>
+          <figure>
+            <img src="img/imgOnly.png" alt="Reference box" width="850">
+            <figcaption id="fig1">Фигура /placeholder number/. Изображението, сложено в HTMl кода. </figcaption>
+          </figure>
+          <figure>
+            <img src="img/circle.png" alt="Reference box" width="850">
+            <figcaption id="fig1">Фигура /placeholder number/. Формата създадена от circle(), която кара текста да има форма.</figcaption>
+          </figure>
 
-            &lt TODO &gt: Ще има формичка с текст, който се увива около нея. Отново мисля да може да се
-            променя.</br>
+          <h4>ellipse()</h4>
+          <p>Елипсата се съдава по същия начин като кръга, но с малко по-различни аргументи </p>
 
-            &lt TODO &gt: Интерактивна версия на демото за reference Box</br>
-          </p>
+          <div class="box">
+            <div class="ellipseDemo"></div>
+            <p>One November night in the year 1782,
+              so the story runs, two brothers sat over their
+              winter fire in the little French town of Annonay,
+              watching the grey smoke-wreaths from the hearth curl
+              up the wide chimney. Their names were Stephen
+              and Joseph Montgolfier, they were papermakers by trade,
+              and were noted as possessing thoughtful minds and a deep
+              interest in all scientific knowledge and new discovery.
+              Before that night—a memorable night, as it was to prove—hundreds of
+              millions of people had watched the rising smoke-wreaths of
+              their fires without drawing any special inspiration from the fact.</p>
+          </div>
+
+
+          <pre class="line-numbers">
+            <code class="language-markup">
+              &ltdiv class="box">
+                &ltdiv class="shape">&lt/div>
+                &ltp>Text&lt/p>
+              &lt/div>
+            </code>
+          </pre>
+
+          <pre class="line-numbers">
+            <code class="language-css">
+              .shape {
+                float: left;
+                shape-outside: ellipse(closest-side farthest-side at 30%);
+                margin: 20px;
+                width: 100px;
+                height: 140px;
+              }
+            </code>
+          </pre>
+
+          <figure>
+            <img src="img/ellipse.png" alt="Reference box" width="850">
+            <figcaption id="fig1">Фигура /placeholder number/. Формята, която кара тексът да има форма. </figcaption>
+          </figure>
+
+          <h4>polygon()</h4>
+          <div class="box">
+            <div class="polyDemo"></div>
+            <p>One November night in the year 1782, so the story runs,
+              two brothers sat over their winter fire in the little
+              French town of Annonay, watching the grey smoke-wreaths
+              from the hearth curl up the wide chimney. Their names were
+              Stephen and Joseph Montgolfier, they were papermakers by trade,
+              and were noted as possessing thoughtful minds and a deep interest
+              in all scientific knowledge and new discovery. Before that night—a
+              memorable night, as it was to prove—hundreds of millions of people had
+              watched the rising smoke-wreaths of their fires without drawing any special
+              inspiration from the fact.</p>
+          </div>
+
+          <pre class="line-numbers">
+            <code class="language-markup">
+              &ltdiv class="box">
+                &ltdiv class="polyDemo">&lt/div>
+                &ltp>Text&lt/p>
+              &lt/div>
+            </code>
+          </pre>
+
+          <pre class="line-numbers">
+            <code class="language-css">
+              .polyDemo {
+                  float: left;
+                  shape-outside: polygon(0px 0px, 0px 189px,
+                  100.48% 94.71%, 200px 120px, 80.67% 37.17%);
+                  width: 200px;
+                  height: 200px;
+              }
+            </code>
+          </pre>
+
+          <figure>
+            <img src="img/polygon.png" alt="Reference box" width="850">
+            <figcaption id="fig1">Фигура /placeholder number/. Генерирания полигон </figcaption>
+          </figure>
         </article>
 
         <header>
@@ -255,11 +378,24 @@
           <h3>Други интересни неща (tips & tricks)</h3>
         </header>
         <article>
+          <h3>Clippy</h3>
           <p>
-            &lt TODO &gt: Да се намерят някакви по-интересни и нетипични приложения.</br>
-            &lt TODO &gt: Да се покаже как може да се правят полигони с онлайн инструмент Clippy. </br>
-            &lt TODO &gt: Да се намерят tips & tricks свързани с темата.</br>
+            <a href="https://bennettfeely.com/clippy/">Clippy</a> e много полезен инстурмент, който помага за създаването на полигони. Както беше показано в
+            примерния код, за да се дефинира полигон трябва да се добавят всички въхове. Това е доста трудно да се направено
+            на сляпо без да знае човек какво всъщност прави.
           </p>
+          <p>
+            Clippy позволява да се дефинират върховете на полигона и генерира CSS кода, който създава този полигон.
+            Firefox също има подобна функционалност, която е вградена
+            в браузъра. За да се използва трябва да се отиде в "inspect mode" и после да се се
+            използва shape editor.
+            Този редактор работи за всики форми, които са
+            описании в този реферат.
+          </p>
+          <figure>
+            <img src="img/clippy.png" alt="Reference box" width="950">
+            <figcaption id="fig1">Фигура /placeholder number/. Демонстрация на Clippy</figcaption>
+          </figure>
         </article>
 
         <header>
@@ -297,6 +433,14 @@
           <cite class="reference">[8]
             <a href="https://tympanus.net/codrops/2018/11/29/an-introduction-to-css-shapes/" target="_blank" rel="external noreferrer nofollow">
               CSS Shapes introduction </a> | tympanus.net, въведени в CSS Shapes </cite></br>
+
+          <cite class="reference">[9]
+            <a href="https://www.w3.org/TR/css-shapes-1/#supported-basic-shapes" target="_blank" rel="external noreferrer nofollow">
+              More CSS Shapes documentation </a> | w3.org, документация за CSS Shapes </cite></br>
+
+          <cite class="reference">[10]
+            <a href="https://drafts.csswg.org/css-shapes/" target="_blank" rel="external noreferrer nofollow">
+              More CSS Shapes documentation </a> | drafts.csswg.org, документация за аргументите, които се приемат от различните функции </cite></br>
 
         </article>
       </article>

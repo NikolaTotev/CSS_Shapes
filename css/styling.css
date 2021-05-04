@@ -30,12 +30,57 @@ h4 {
   color: #424242;
 }
 
-
 .warningMsg
 {
   color: #DF7066;
   font-weight: bold;
   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.shape {
+    float: left;
+    width: 150px;
+    height: 100px;
+    shape-outside: inset(20px 50px 10px 0 round 50px);
+    background-color: #FB8500;
+    border-radius: 10px;
+    margin:20px;
+    padding: 20px;
+}
+
+pre code {
+  background-color: #FFEDD9;
+  border: 1px solid #FB8500;
+  border-radius: 10px;
+  display: block;
+  font-size: 18px;
+
+  text-align: left;
+}
+
+.circleDemo {
+  float: left;
+  shape-outside: circle(50% at 42%);
+  margin: 20px;
+}
+
+.ellipseDemo {
+    float: left;
+    shape-outside: ellipse(closest-side farthest-side at 30%);
+    margin: 20px;
+    width: 200px;
+    height: 140px;
+}
+
+.polyDemo {
+    float: left;
+    shape-outside: polygon(0px 0px, 0px 189px, 100.48% 94.71%, 200px 120px, 80.67% 37.17%);
+    width: 200px;
+    height: 200px;
+}
+
+.box{
+  margin-bottom: 50px;
 }
 
 p {
